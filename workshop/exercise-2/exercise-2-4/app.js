@@ -9,6 +9,9 @@ const racer = []
     }
 // declare id track
 let track = document.getElementById('track');
+const trackLength = track.offsetWidth;
+const hopLength = Math.floor(Math.random() *100) /trackLength * 1000;
+console.log(hopLength);
 
     for (let i = 0; i < frogs; i++) {
     // add li element    
@@ -28,11 +31,26 @@ let track = document.getElementById('track');
     // set bkg color 
     number.style.background = racer[i].color;
     // progress at 0 
+
+    // add id to span
+    number.id = `frog-${i}`;
     racer[i].progress = 0;
     }
 
 
 
+    for (let i = 0; i < racer.length ; i++){
+    const position = document.getElementById(`frog-${i}`);
+    console.log(position);
+    setInterval(function(){
+    let currentPosition = position.style.left;
+    
+    // position.style.left = `${position.style.left + hopLength}%`;
+    console.log(position.style.left);
+    }, 500);
+
+
+    };
 
 
 
