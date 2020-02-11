@@ -23,13 +23,13 @@ source.href = 'https://himym2017.wordpress.com/2017/03/25/the-best-himym-episode
 source.innerText = 'Source';
 
 // Add content to the page!
-mainDiv.appendChild(h1);
-mainDiv.appendChild(paragraphOne);
-mainDiv.appendChild(h2);
-mainDiv.appendChild(image);
-mainDiv.appendChild(paragraphTwo);
-mainDiv.appendChild(paragraphThree);
-mainDiv.appendChild(source);
+main.appendChild(h1);
+main.appendChild(paragraph);
+main.appendChild(h2);
+main.appendChild(image);
+main.appendChild(paragraphTwo);
+main.appendChild(paragraphThree);
+main.appendChild(source);
 
 // Add <link> to CSS
 const head = document.getElementsByTagName('head');

@@ -6,7 +6,9 @@
 
 ```js
 // Example
-
+setTimeout(function(){
+    console.log('HELLO');
+}, 3000);
 ```
 
 ---
@@ -15,7 +17,11 @@
 
 ```js
 // Example
-
+const timmer = setInterval(function(){
+    console.log('here');
+}, 1000);
+//stop the timmer
+clearInterval(timmer);
 ```
 
 ---

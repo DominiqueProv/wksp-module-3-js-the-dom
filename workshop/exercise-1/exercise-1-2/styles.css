@@ -14,28 +14,51 @@ body {
     padding: 4px 32px 32px;
 }
 
-h1, h2 {
+.title {
     font-family: 'Open Sans', sans-serif;
     text-align: center; 
 }
 
-h2 {
+/* h1, h2 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center; 
+} */
+
+
+.sub-title {
     text-align: left;
 }
 
-p {
+/* h2 {
+    text-align: left;
+} */
+
+.text-courant {
     font-size: 17px;
     line-height: 1.5em;
 }
 
-img {
+/* p {
+    font-size: 17px;
+    line-height: 1.5em;
+} */
+
+.feature {
     border: #fafafa;
     border-radius: 4px;
     box-shadow: 4px 4px 14px rgba(128, 128, 128, .4);
     width: 100%;
 }
 
-a {
+
+/* img {
+    border: #fafafa;
+    border-radius: 4px;
+    box-shadow: 4px 4px 14px rgba(128, 128, 128, .4);
+    width: 100%;
+} */
+
+.link {
     color: #174E7C;
     display: block;
     font-weight: 700;
@@ -43,3 +66,12 @@ a {
     text-align: right;
     text-decoration: none;
 }
+
+/* a {
+    color: #174E7C;
+    display: block;
+    font-weight: 700;
+    margin-top: auto;
+    text-align: right;
+    text-decoration: none;
+} */

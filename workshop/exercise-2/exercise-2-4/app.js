@@ -10,8 +10,6 @@ const racer = []
 // declare id track
 let track = document.getElementById('track');
 const trackLength = track.offsetWidth;
-const hopLength = Math.floor(Math.random() *100) /trackLength * 1000;
-console.log(hopLength);
 
     for (let i = 0; i < frogs; i++) {
     // add li element    
@@ -42,11 +40,17 @@ console.log(hopLength);
     for (let i = 0; i < racer.length ; i++){
     const position = document.getElementById(`frog-${i}`);
     console.log(position);
-    setInterval(function(){
-    let currentPosition = position.style.left;
-    
-    // position.style.left = `${position.style.left + hopLength}%`;
-    console.log(position.style.left);
+    let currentPosition = 0;
+
+
+    const interval = setInterval(function(){
+    const hopLength = Math.floor(Math.random() *100) /trackLength * 100;
+    currentPosition += hopLength;
+    console.log(currentPosition);
+    position.style.left = `${currentPosition}%`;
+    if (currentPosition >= 100){
+        clearInterval(interval);
+    }
     }, 500);
 
 

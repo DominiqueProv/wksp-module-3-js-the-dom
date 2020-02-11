@@ -87,7 +87,6 @@ Instead, we will use these methods
 
 ```js
 // Example
-
 ```
 
 ---
@@ -100,8 +99,8 @@ Instead, we will use these methods
 
 You can modify the content of a leaf, an end node with 
 
-- [`.innerText()`](https://www.w3schools.com/jsref/prop_node_innertext.asp)
-- [`.innerHTML()`](https://www.w3schools.com/jsref/prop_html_innerhtml.asp) 
+- [`.innerText`](https://www.w3schools.com/jsref/prop_node_innertext.asp)
+- [`.innerHTML`](https://www.w3schools.com/jsref/prop_html_innerhtml.asp) 
 
 ```js
 // Example
@@ -127,6 +126,9 @@ To add a new node to an HTML page, you need to do it in 3 steps.
 
 ```js
 // Example
+const paragraph = document.createElement('p'); --> to reuse the function 
+paragraph.innerText = 'new bacon out there.'
+document.querySelector('body').appendChild(paragraph);
 
 ```
 
@@ -151,8 +153,7 @@ We can style elements from JavaScript.
 ```js
 const myDiv = document.getElementById('my-div');
 
-myDiv.style.background = "purple";
-```
+myDiv.style.background = "purple"; --> attribute that uses '-' need to be writen as camelCase other wize it breaks the code```
 
 ⚠️ Houston. We have a problem!
 
